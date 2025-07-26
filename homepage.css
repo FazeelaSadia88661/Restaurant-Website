@@ -1,0 +1,126 @@
+.hero-section {
+  background-image: url('BackgroundImages/bbq-.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; /* added to stack items vertically */
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent overlay */
+  z-index: 0;
+}
+
+.hero-section > .top-heading,
+.hero-section > .bottom-heading {
+  color: white;
+  z-index: 2;
+  position: relative;
+  margin: 10px 0;
+}
+
+.hero-section h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.hero-section h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.column-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 0 0 10px; /* icon after text, space from left side */
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* ===== Feature Section Styles ===== */
+.features-section {
+  height:350px;
+  background-image: url('../BackgroundImages/icon images.webp');
+  background: linear-gradient(145deg,  #b49359 20%), url('https://www.transparenttextures.com/patterns/cubes.png'); 
+  background-blend-mode: overlay;
+  color: #11122b;
+  padding: 20px 10px; 
+  border: 1px solid #f4c430; border-top: 10px solid white;
+  color:#11122b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Ubuntu Condensed ", sans-serif;
+  box-shadow: inset 0px -16px 59px -6px rgba(0, 0, 0, 0.58);
+
+
+
+
+
+  
+    color: #11122b;
+    padding: 20px 10px; 
+    border: 1px solid #f4c430; 
+  }
+
+  .features-section > .columns-wrapper {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .features-section > .columns-wrapper > .column :nth-child(1) {
+    font-size: 3em;
+    
+} 
+.features-section > .columns-wrapper > .column {
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    border-radius: 10px;
+    transition: border-bottom 0.5s; /* only border, no scaling */
+    transform-origin: center;
+}
+
+.features-section > .columns-wrapper > .column:hover {
+    border-bottom: 5px solid #11122b;
+}
+
+/* Independent hover for heading */
+.features-section > .columns-wrapper > .column :nth-child(2) {
+    font-size: 1em;
+    font-weight: 900;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(2):hover {
+    letter-spacing: 2px;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Independent hover for paragraph */
+.features-section > .columns-wrapper > .column :nth-child(3) {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.features-section > .columns-wrapper > .column :nth-child(3):hover {
+    letter-spacing: 2px;
+    color: #333;
+    transform: scale(1.05);
+}

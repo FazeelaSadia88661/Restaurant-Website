@@ -1,0 +1,243 @@
+/* ===== Contact Page Styling ===== */
+/* Wave Header Styling */
+.wave-header {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f4e4bc 0%, #d9a66b 50%, #a67b5b 100%);
+}
+
+.wave-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+   
+}
+
+.wave-header > .wave-header-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wave-header > .wave-header-wrapper > .heading-wrapper {
+    flex: 1;
+    text-align: left;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+}
+
+.wave-header > .wave-header-wrapper > .nav-links {
+    flex: 1;
+    text-align: right;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wave-header > .wave-header-wrapper a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.wave-header > .wave-header-wrapper a:hover {
+    color: #ffcc00;
+}
+
+/* Contact Hero Section */
+.contact-hero {
+    text-align: center;
+    padding: 20px 10px;
+    color: #11122b;
+    margin-bottom: 0.5px;
+    background: linear-gradient(145deg, #b49359 20%), url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    background-blend-mode: overlay;
+    
+}
+
+.contact-hero h2 {
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-hero p {
+    font-size: 1.1rem;
+    color: #f4e4bc;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 1200px;
+    margin: 2 rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: linear-gradient(145deg, #a0824e 20%); 
+    background-blend-mode: overlay;
+    border: 1px solid #f4c430; 
+}
+
+/* Contact Form and Info Sections */
+.contact-form, .contact-info {
+    background: linear-gradient(145deg, #c0b397 20%, #132841 100%), url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    background-blend-mode: overlay;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #f4c430;
+}
+
+.contact-form:hover, .contact-info:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form h2, .contact-form h3, .contact-info h2, .contact-info h3 {
+    font-size: 1.8rem;
+    color: #11122b;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #6e4540;
+    padding-bottom: 0.5rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #f4c430;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #11122b;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    background-color: #f4e4bc;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #11122b;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info .fa {
+    color: #e74c3c;
+}
+
+.map-placeholder {
+    position: relative;
+    padding-bottom: 50%; /* Adjusts height based on width (aspect ratio) */
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-placeholder:hover {
+    background-color: #f4e4bc;
+}
+
+
+.map-placeholder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.map-placeholder:hover iframe {
+    transform: scale(1.05);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wave-header {
+        height: 200px;
+    }
+
+    .wave-header-wrapper {
+        top: 15%;
+    }
+
+    .contact-hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-hero p {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #11122b;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin-top: -4px;
+}
+
+.footer > .copywright-wrapper {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.7em;
+    color: #cbcbcb;
+    text-align: center;
+}

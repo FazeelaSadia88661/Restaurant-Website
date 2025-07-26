@@ -1,0 +1,231 @@
+/* ===== Base Reset and Fonts ===== */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto+Slab', serif;
+}
+/* ===== Footer Styles ===== */
+.footer {
+    background-color: #11122b;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin-top: -4px;
+}
+.footer > .logo-footer img {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #cbcbcb;
+    border-color: #ffcc00;
+    opacity: 0.5;
+}
+.footer > .footer-phone-hours span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+.footer > .footer-phone-hours > .hours {
+    font-size: 0.8em;
+    color: #cea135;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.footer > .links-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer > .social-media-icons-wrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer > .social-media-icons-wrapper a {
+    font-size: 1.5em;
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.footer > .social-media-icons-wrapper a:hover {
+    color: #cea135;
+    transform: scale(1.2);
+}
+.footer > .copywright-wrapper {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.7em;
+    color: #cbcbcb;
+    text-align: center;
+}
+
+/* ===== About Page Styling ===== */
+/* Curved header styling */
+/* Updated header image styling */
+.curved-header {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #f4e4bc, #d9a66b);
+}
+
+.curved-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 10%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+.curved-header > .curved-header-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.curved-header > .curved-header-wrapper > .heading-wrapper {
+    flex: 1;
+    text-align: left;
+    color: #ffcc00;;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.curved-header-wrapper > .heading-wrapper h1 {
+    font-size: 2.5em;
+    margin: 0;
+    }
+.curved-header > .curved-header-wrapper > .nav-links {
+    flex: 1;
+    text-align: right;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.curved-header > .curved-header-wrapper a {
+    color: #ffff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.curved-header > .curved-header-wrapper a:hover {
+    color: #ffcc00;
+}
+
+/* Page container styling */
+.page-container {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(200deg, #b49359 20%, #132841 100%), url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    background-blend-mode: overlay;
+    color: #11122b;
+    padding: 20px 10px; 
+    border: 1px solid #f4c430; 
+    width: 100%; 
+    margin: 2px 0; 
+}
+
+.page-container > .about-content {
+    width: 80%;
+    background: #f6efdf; /* Slightly transparent white */
+    padding: 20px; 
+    border-radius: 12px; /* Softer corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(244, 196, 48, 0.2); /* Faint golden border */
+    border: 1px solid #f4c430; 
+    
+}
+
+.page-container > .about-content > #restaurant-image {
+    width: 300px; /* Slightly smaller image for compact layout */
+    margin: 15px 20px 15px 0; /* Reduced margins */
+    float: left;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease; /* Faster hover effect */
+}
+
+.page-container > .about-content > #restaurant-image:hover {
+    transform: scale(1.05); /* Smaller hover scale for subtlety */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.page-container > .about-content > h2 {
+    font-size: 2.2em; /* Slightly smaller for compact fit */
+    color: #222;
+    margin-bottom: 15px; /* Reduced margin */}
+
+/* Squares wrapper styling */
+.squares-wrapper {
+    margin-top: 2px; /* Adds 20px space outside the element on all sides */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color:#f4c430;
+    color: #11122b;
+    background: linear-gradient(145deg,  #b49359 20%, #132841 100%), url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    background-blend-mode: overlay;
+    border: 1px solid #f4c430; 
+}
+.squares-wrapper > .squares {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+.squares-wrapper > .squares > .square {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #f4c430; 
+}
+.squares-wrapper > .squares > .square:hover {
+    transform: translateY(-5px);
+    background-color: #f4e4bc;
+}
+.squares-wrapper > .squares > .square > .image-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.squares-wrapper > .squares > .square > .square-text-wrapper {
+    padding: 15px;
+    text-align: center;
+}
+.squares-wrapper > .squares > .square > p {
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    color: #666;
+}
+
+
+/* ===== End of Common Styles ===== */

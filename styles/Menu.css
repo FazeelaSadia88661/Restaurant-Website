@@ -1,0 +1,199 @@
+/* ===== Menu Page Styling ===== */
+/* Hero Section */
+.menu-hero {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #11222b;
+    margin-bottom: 2;
+    background-color:#b49359 ;
+    background: linear-gradient(145deg,  #b49359 20%), url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    background-blend-mode: overlay;
+}
+.menu-hero h2 {
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu-hero p {
+    font-size: 1.1rem;
+    color: #f4e4bc;
+}
+
+/* Menu Container */
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    background: linear-gradient(145deg,  #a0824e 20%); 
+    background-blend-mode: overlay;
+    border: 1px solid #f4c430; 
+   
+}
+
+.menu-category {
+    background: linear-gradient(145deg,  #c0b397 20%, #132841 100%), url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    background-blend-mode: overlay;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #f4c430; 
+}
+
+.menu-category:hover {
+    transform: translateY(-5px);
+
+}
+
+.menu-category h2 {
+    font-size: 1.8rem;
+    color: #11222b;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #6e4540;
+    padding-bottom: 0.5rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f4e4bc;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h3 {
+    font-size: 1.3rem;
+    color: #11122b;
+    margin-bottom: 0.3rem;
+}
+
+.item-details p {
+    font-size: 0.95rem;
+    color: #11122b;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .curved-header {
+        height: 200px;
+    }
+
+    .curved-header-wrapper {
+        top: 15%;
+    }
+
+    .menu-hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-hero p {
+        font-size: 1rem;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* ===== Menu Page Styling ===== */
+/* Wave Header Styling */
+.wave-header {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f4e4bc 0%, #d9a66b 50%, #a67b5b 100%);
+}
+
+.wave-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.wave-header > .wave-header-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wave-header > .wave-header-wrapper > .heading-wrapper {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wave-header > .wave-header-wrapper > .nav-links {
+    flex: 1;
+    text-align: right;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wave-header > .wave-header-wrapper a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.wave-header > .wave-header-wrapper a:hover {
+    color: #ffcc00;
+}
+
